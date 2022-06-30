@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class Player : Interactable
 {
     [SerializeField] CharacterController CH;
+    [SerializeField] GameObject explosion;
     Type type;
     public float acceleration = 100f;
     public float maxSpeed = 500f;
@@ -40,6 +41,7 @@ public class Player : Interactable
     {   
         if (hit.gameObject.tag == "object")
         {
+            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
             Destroy(hit.gameObject);
         }

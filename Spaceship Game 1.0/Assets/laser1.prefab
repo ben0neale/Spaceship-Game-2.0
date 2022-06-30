@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RB: {fileID: -5519686041389331762}
+  miniExplosion: {fileID: 4212803340104631771, guid: 9ed75c2a841343341ac53f98a2f4d691, type: 3}
 --- !u!65 &2461047111872025945
 BoxCollider:
   m_ObjectHideFlags: 0
